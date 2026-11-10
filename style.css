@@ -1,0 +1,17 @@
+@layer utilities {
+.gold-gradient-text {
+background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #D97706 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.navy-gradient {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+}
+
+.hero-pattern {
+    background-color: #0b192c;
+    background-image: radial-gradient(#1e293b 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+}
