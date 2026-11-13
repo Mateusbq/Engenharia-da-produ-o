@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engenharia de Produção</title>
+    <link rel="icon" type="image/svg+xml" href="https://api.iconify.design/lucide:factory.svg?color=%23f59e0b">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased font-sans selection:bg-amber-400 selection:text-slate-900">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo (Clica e volta ao topo) -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-slate-950 font-bold shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                        <i data-lucide="factory" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-lg tracking-tight block leading-none">ENG. PRODUÇÃO</span>
+                        <span class="text-xs text-amber-400 tracking-widest uppercase font-medium">Inovação e Gestão</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="#sobre" class="text-slate-300 hover:text-amber-400 transition-colors">O que é?</a>
+                    <a href="#atuacao" class="text-slate-300 hover:text-amber-400 transition-colors">Áreas de Atuação</a>
+                    <a href="#carreira" class="text-slate-300 hover:text-amber-400 transition-colors">Carreira e Mercado</a>
+                    <a href="#formacao" class="text-slate-300 hover:text-amber-400 transition-colors">Faculdades</a>
+                    <a href="#pioneira" class="px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 hover:bg-amber-500 hover:text-slate-950 transition-all font-semibold flex items-center gap-2">
+                        <i data-lucide="award" class="w-4 h-4"></i>
+                        Mulher Inspiradora
+                    </a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Abrir Menu">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#sobre" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">O que é?</a>
+            <a href="#atuacao" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Áreas de Atuação</a>
+            <a href="#carreira" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Carreira e Mercado</a>
+            <a href="#formacao" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Faculdades</a>
+            <a href="#pioneira" class="mobile-link block px-3 py-2 rounded-md text-base font-medium text-amber-400 bg-amber-500/10 border border-amber-500/20">Mulher Inspiradora: Enedina Marques</a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Fundo azul escuro sólido sem degradê) -->
+    <section class="hero-pattern text-white py-20 lg:py-28 relative overflow-hidden bg-[#0b192c]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+
+                <!-- Título no mesmo tom de amarelo do site (text-amber-400) -->
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-amber-400 tracking-tight mb-6">
+                    Engenharia de Produção
+                </h1>
+
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Engenharia do Futuro e Gestão
+                </div>
+                
+                <p class="text-lg sm:text-xl text-slate-300 leading-relaxed">
+                    A área que conecta tecnologia, finanças, pessoas e processos para transformar ideias em sistemas altamente eficientes e sustentáveis.
+                </p>
+
+                <!-- Métricas no Hero -->
+                <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 border-t border-slate-800">
+                    <div>
+                        <span class="block text-3xl font-extrabold text-amber-400">5 Anos</span>
+                        <span class="text-sm text-slate-400 font-medium">Duração Média do Bacharelado</span>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-extrabold text-amber-400">Multi</span>
+                        <span class="text-sm text-slate-400 font-medium">Setores de Atuação</span>
+                    </div>
+                    <div>
+                        <span class="block text-3xl font-extrabold text-amber-400">Alta</span>
+                        <span class="text-sm text-slate-400 font-medium">Demanda no Mercado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O que é Engenharia de Produção -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-amber-600 font-bold mb-2">Visão Geral</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">O que faz um(a) Engenheiro(a) de Produção?</p>
+                <p class="mt-4 text-slate-600 text-lg">
+                    Enquanto outros engenheiros projetam produtos ou estruturas físicas isoladas, o engenheiro de produção projeta e gerencia os **processos inteiros** que fazem tudo funcionar.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center mb-6">
+                        <i data-lucide="calendar" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Planejar a Produção</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Definir estratégias, cronogramas e fluxos operacionais para que produtos ou serviços sejam entregues no prazo certo.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-6">
+                        <i data-lucide="trending-down" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Reduzir Custos</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Analisar orçamentos e otimizar recursos financeiros para maximizar a rentabilidade das organizações.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center mb-6">
+                        <i data-lucide="recycle" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Evitar Desperdícios</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Implementar metodologias enxutas (Lean Manufacturing) para eliminar etapas desnecessárias e poupar matérias-primas.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Garantir Qualidade</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Estabelecer padrões rigorosos de controle para garantir que o resultado final atenda com excelência aos clientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Onde Pode Atuar -->
+    <section id="atuacao" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-12">
+                <div>
+                    <h2 class="text-xs uppercase tracking-widest text-amber-400 font-bold mb-2">Versatilidade no Mercado</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold">Onde o Engenheiro de Produção Atua?</p>
+                </div>
+                <p class="text-slate-400 max-w-md mt-4 lg:mt-0 text-sm">
+                    Por ter uma formação abrangente, o profissional transita facilmente entre o setor produtivo tradicional e os serviços modernos.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="p-6 rounded-xl bg-slate-800/60 border border-slate-700/60 text-center hover:bg-slate-800 transition-colors">
+                    <div class="w-10 h-10 mx-auto rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
+                        <i data-lucide="factory" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-semibold text-sm">Indústrias</span>
+                </div>
+
+                <div class="p-6 rounded-xl bg-slate-800/60 border border-slate-700/60 text-center hover:bg-slate-800 transition-colors">
+                    <div class="w-10 h-10 mx-auto rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
+                        <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-semibold text-sm">Hospitais</span>
+                </div>
+
+                <div class="p-6 rounded-xl bg-slate-800/60 border border-slate-700/60 text-center hover:bg-slate-800 transition-colors">
+                    <div class="w-10 h-10 mx-auto rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
+                        <i data-lucide="building-2" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-semibold text-sm">Construção Civil</span>
+                </div>
+
+                <div class="p-6 rounded-xl bg-slate-800/60 border border-slate-700/60 text-center hover:bg-slate-800 transition-colors">
+                    <div class="w-10 h-10 mx-auto rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
+                        <i data-lucide="laptop" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-semibold text-sm">Tecnologia</span>
+                </div>
+
+                <div class="p-6 rounded-xl bg-slate-800/60 border border-slate-700/60 text-center hover:bg-slate-800 transition-colors">
+                    <div class="w-10 h-10 mx-auto rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
+                        <i data-lucide="landmark" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-semibold text-sm">Bancos e Finanças</span>
+                </div>
+
+                <div class="p-6 rounded-xl bg-slate-800/60 border border-slate-700/60 text-center hover:bg-slate-800 transition-colors">
+                    <div class="w-10 h-10 mx-auto rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
+                        <i data-lucide="truck" class="w-5 h-5"></i>
+                    </div>
+                    <span class="font-semibold text-sm">Transportadoras</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carreira, Habilidades e Salários -->
+    <section id="carreira" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Coluna Esquerda: Salários -->
+                <div class="lg:col-span-7 bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center font-bold">
+                            <i data-lucide="banknote" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Média Salarial</h3>
+                            <p class="text-slate-500 text-xs">Valores médios com base na progressão de carreira</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs font-semibold uppercase text-slate-400 tracking-wider">Nível Inicial (Júnior)</span>
+                                <p class="text-slate-700 font-medium">Recém-formados ou primeiros anos</p>
+                            </div>
+                            <span class="text-lg font-extrabold text-slate-900 bg-emerald-50 text-emerald-700 px-3 py-1 rounded-lg border border-emerald-200">
+                                R$ 4.000 – 6.000
+                            </span>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs font-semibold uppercase text-amber-600 tracking-wider">Nível Intermediário (Pleno)</span>
+                                <p class="text-slate-700 font-medium">Profissionais com experiência e liderança</p>
+                            </div>
+                            <span class="text-lg font-extrabold text-slate-900 bg-amber-50 text-amber-700 px-3 py-1 rounded-lg border border-amber-200">
+                                R$ 7.000 – 11.000
+                            </span>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs font-semibold uppercase text-purple-600 tracking-wider">Nível Avançado (Sênior / Gestão)</span>
+                                <p class="text-slate-700 font-medium">Gerentes, diretores ou consultores executivos</p>
+                            </div>
+                            <span class="text-lg font-extrabold text-slate-900 bg-purple-50 text-purple-700 px-3 py-1 rounded-lg border border-purple-200">
+                                R$ 12.000 – 16.000+
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna Direita: Habilidades e Desafios -->
+                <div class="lg:col-span-5 space-y-8">
+                    <!-- Habilidades -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                        <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                            <i data-lucide="brain-circuit" class="w-5 h-5 text-amber-500"></i> Habilidades Necessárias
+                        </h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 font-medium text-xs">Matemática Aplicada</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 font-medium text-xs">Gestão e Administração</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 font-medium text-xs">Tecnologia e Dados</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 font-medium text-xs">Liderança de Equipes</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 font-medium text-xs">Organização Extrema</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 font-medium text-xs">Trabalho em Equipe</span>
+                        </div>
+                    </div>
+
+                    <!-- Desafios do Dia a Dia -->
+                    <div class="bg-amber-500/10 p-8 rounded-2xl border border-amber-500/20">
+                        <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+                            <i data-lucide="alert-circle" class="w-5 h-5 text-amber-600"></i> Principais Desafios
+                        </h3>
+                        <ul class="text-sm text-slate-700 space-y-2">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-600 shrink-0"></i> Cumprir prazos de produção sob pressão.</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-600 shrink-0"></i> Manter custos baixos sem perder a qualidade.</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-600 shrink-0"></i> Acompanhar inovações tecnológicas de ponta.</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-amber-600 shrink-0"></i> Solucionar problemas complexos de logística.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Formação e Faculdade -->
+    <section id="formacao" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-amber-600 font-bold mb-2">Graduação</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Como é o Curso e Onde Estudar?</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <!-- Disciplinas -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200">
+                    <h3 class="font-bold text-lg text-slate-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="book-open" class="w-5 h-5 text-amber-500"></i> Disciplinas Principais
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        O curso combina a base forte das exatas com matérias de gestão e humanas.
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 font-medium">
+                        <li class="bg-white p-2.5 rounded-lg border border-slate-100">• Cálculo, Física e Estatística</li>
+                        <li class="bg-white p-2.5 rounded-lg border border-slate-100">• Economia e Engenharia Financeira</li>
+                        <li class="bg-white p-2.5 rounded-lg border border-slate-100">• Logística e Cadeia de Suprimentos</li>
+                        <li class="bg-white p-2.5 rounded-lg border border-slate-100">• Gestão da Qualidade e Lean</li>
+                    </ul>
+                </div>
+
+                <!-- Formas de Ingresso -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200">
+                    <h3 class="font-bold text-lg text-slate-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="door-open" class="w-5 h-5 text-amber-500"></i> Formas de Ingresso
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Diversos caminhos para ingressar no ensino superior público e privado.
+                    </p>
+                    <div class="grid grid-cols-2 gap-2 text-center text-xs font-semibold text-slate-800">
+                        <div class="bg-amber-100/60 text-amber-900 p-3 rounded-xl border border-amber-200">ENEM</div>
+                        <div class="bg-amber-100/60 text-amber-900 p-3 rounded-xl border border-amber-200">SISU</div>
+                        <div class="bg-amber-100/60 text-amber-900 p-3 rounded-xl border border-amber-200">PROUNI</div>
+                        <div class="bg-amber-100/60 text-amber-900 p-3 rounded-xl border border-amber-200">FIES</div>
+                    </div>
+                </div>
+
+                <!-- Instituições de Destaque -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200">
+                    <h3 class="font-bold text-lg text-slate-900 mb-4 flex items-center gap-2">
+                        <i data-lucide="graduation-cap" class="w-5 h-5 text-amber-500"></i> Instituições de Destaque
+                    </h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Exemplos de universidades reconhecidas que oferecem o curso:
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-900 text-amber-400 font-bold text-xs">UnB</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-900 text-amber-400 font-bold text-xs">UFG</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-900 text-amber-400 font-bold text-xs">UFPR</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-900 text-amber-400 font-bold text-xs">UFSCar</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-900 text-amber-400 font-bold text-xs">UFCAT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DESTAQUE: Mulher Inspiradora (Enedina Alves Marques) com a nova foto -->
+    <section id="pioneira" class="py-24 bg-slate-950 text-white relative overflow-hidden">
+        <!-- Elementos Visuais de Fundo -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl -z-0"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-amber-500/5 rounded-full blur-3xl -z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase tracking-widest inline-block mb-3">
+                    História e Pioneirismo
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-serif">Mulher Inspiradora na Engenharia</h2>
+            </div>
+
+            <!-- Card Principal -->
+            <div class="bg-slate-900/90 rounded-3xl border border-slate-800 p-8 lg:p-12 shadow-2xl backdrop-blur-md">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- Foto / Retrato Histórico (Atualizado com a nova imagem) -->
+                    <div class="lg:col-span-4 text-center">
+                        <div class="relative inline-block group">
+                            <!-- Borda Dourada Externa com Brilho -->
+                            <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-amber-500 to-amber-300 opacity-75 blur group-hover:opacity-100 transition duration-500"></div>
+                            
+                            <div class="relative rounded-2xl overflow-hidden border-2 border-amber-500/40 bg-slate-950 p-2">
+                                <img 
+                                    src="ft_enedina.png" 
+                                    alt="Retrato Histórico de Enedina Alves Marques" 
+                                    class="w-full max-w-[280px] h-[340px] object-cover rounded-xl filter grayscale contrast-125 group-hover:grayscale-0 transition duration-500"
+                                    onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600'"
+                                />
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <span class="text-xs font-medium text-amber-400/90 bg-amber-500/10 px-3 py-1 rounded-full border border-amber-500/20">
+                                Pioneira na Engenharia (1913–1981)
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo Biográfico -->
+                    <div class="lg:col-span-8 space-y-6">
+                        <div>
+                            <h3 class="text-3xl font-bold font-serif gold-gradient-text mb-1">Enedina Alves Marques</h3>
+                            <p class="text-slate-400 text-sm font-medium">Primeira mulher negra a se formar em Engenharia no Brasil (UFPR, 1945)</p>
+                        </div>
+
+                        <p class="text-slate-300 leading-relaxed text-base">
+                            Enedina Alves Marques rompeu gigantescas barreiras sociais, de gênero e raciais na década de 1940 para se tornar uma das engenheiras mais respeitadas da história do Brasil. Sua dedicação e capacidade técnica abriram caminhos para gerações de mulheres nas ciências exatas.
+                        </p>
+
+                        <!-- Principais Contribuições -->
+                        <div class="space-y-3 pt-2">
+                            <h4 class="text-sm font-bold uppercase tracking-wider text-amber-400">Grandes Feitos e Contribuições:</h4>
+                            
+                            <div class="flex items-start gap-3 bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
+                                <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i data-lucide="zap" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-white text-sm">Usina Hidrelétrica Capivari-Cachoeira</h5>
+                                    <p class="text-slate-400 text-xs mt-0.5">Atuou em projetos estruturais de grande porte no Plano Hidrelétrico do Estado do Paraná, incluindo os trabalhos marcantes na usina.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3 bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
+                                <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                                    <i data-lucide="compass" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-white text-sm">Abertura de Caminhos e Legado</h5>
+                                    <p class="text-slate-400 text-xs mt-0.5">Sua trajetória inspiradora demonstrou a importância da diversidade na resolução de problemas complexos de engenharia.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nota Explicativa -->
+                        <div class="mt-6 p-4 rounded-xl bg-amber-500/5 border border-amber-500/20 text-slate-300 text-xs italic leading-relaxed flex items-start gap-3">
+                            <i data-lucide="info" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+                            <span>
+                                <strong>Nota Histórica:</strong> Enedina formou-se em Engenharia Civil — em uma época na qual a Engenharia de Produção ainda não existia como um curso autônomo no Brasil. Seu pioneirismo na gestão de obras e infraestrutura inspira todas as ramificações da engenharia moderna.
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Limpo -->
+    <footer class="bg-slate-950 text-slate-500 text-xs py-8 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>Feito por Mateus Benício.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts JavaScript -->
+    <script>
+        // Inicializa os ícones do Lucide
+        lucide.createIcons();
+
+        // Controle do Menu Mobile
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
